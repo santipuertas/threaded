@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threaded - Compras</title>
+    <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+    <script src="https://kit.fontawesome.com/0bda7ee83d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="carrito">
+            <div class="contenedor-carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="productos">
+                    <span id="cantidadProductos">0</span>
+                </div>
+            </div>
+
+            <div class="container-productosdelcarrito carritoescondido">
+                <div class="productos-fila escondido">
+                    <div class="productosdelcarrito">
+                        <div class="informaciondelproductodelcarro">
+                            <span class="cantidadproductocarrito">1</span>
+                            <p class="tituloproductocarrito">Bolso</p>
+                            <span class="precioproductocarrito">$2000</span>
+                        </div>
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </div>
+
+
+                <div class="totalcarrito escondido">
+                    <h3>Total:</h3>
+                    <span class="totalpagar">$2000</span> ARS
+                </div>
+                <p class="carro-vacio">El carro está vacio</p>
+                <a href="#"><div class="botoncompra escondido">
+                    <p class="buy escondido">COMPRAR</p>
+                </div></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="pantalladecompra esconder">
+        <div class="fondo">
+            <form>
+                <i class="fa-solid fa-xmark"></i>
+                <h1>Comprar</h1>
+                <div class="inputbox">
+                    <h2>Numero de la Tarjeta</h2>
+                    <input type="text" placeholder="1234 5678 9123 4567" id="card" required>
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div class="inputbox">
+                    <h2>CVU</h2>
+                    <input type="text" placeholder="123" id="card" required>
+                    <i class="fa-solid fa-asterisk"></i>
+                </div>
+                <div class="inputbox">
+                    <h2>Fecha de Vencimiento</h2>
+                    <input type="date" placeholder="123" id="card" min="2024-07-28" required>
+                    <i class="fa-solid fa-calendar"></i>
+                </div>
+                <h1 class="pagadototal">$2000</h1>
+                    <a href="#"><p class="comprafinalizada">COMPRAR</p></a>
+            </form>
+        </div>
+    </div>
+    
+
+    <div class="convertidor">
+        <a href="paginaCompraUSD/compra.html"><i class="fa-solid fa-coins"></i></a>
+        <div class="monedas">
+            <span id="conversor">ARS</span>
+        </div>
+    </div>
+
+    <div class="options">
+        <div class="menu">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <div class="submenu">
+                <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                <a href="../login-signin/login/index.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="../info/index.html"><i class="fa-solid fa-info"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="textoBanner">
+          <h1>Compras</h1>
+       </div>
+    </div>
+
+    <div class="items">
+        <div class="item">
+            <div class="itemimg">
+                <img src="fotos/item1.jpg">
+            </div>
+            <div class="iteminfo">
+                <h2>Cartuchera de Tela</h2>
+                <p class="precio">$8800.00</p>
+                <button class="anadir-carrito">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemimg">
+                <img src="fotos/item2.jpg">
+            </div>
+            <div class="iteminfo">
+                <h2>Bolsa decorada</h2>
+                <p class="precio">$15700.00</p>
+                <button class="anadir-carrito">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemimg">
+                <img src="fotos/item3.jpg">
+            </div>
+            <div class="iteminfo">
+                <h2>Cartera de Denim</h2>
+                <p class="precio">$22000.00</p>
+                <button class="anadir-carrito">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemimg">
+                <img src="fotos/item4.jpg">
+            </div>
+            <div class="iteminfo">
+                <h2>Individuales con bolsita</h2>
+                <p class="precio">$7000.00</p>
+                <button class="anadir-carrito">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemimg">
+                <img src="fotos/item5.jpg">
+            </div>
+            <div class="iteminfo">
+                <h2>Pantalon Floreado</h2>
+                <p class="precio">$25000.00</p>
+                <button class="anadir-carrito">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemimg">
+                <img src="fotos/item6.jpg">
+            </div>
+            <div class="iteminfo">
+                <h2>Cortinas</h2>
+                <p class="precio">$17500.00</p>
+                <button class="anadir-carrito">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemimg">
+                <img src="fotos/item7.jpg">
+            </div>
+            <div class="iteminfo">
+                <h2>Pulsera</h2>
+                <p class="precio">$1500.00</p>
+                <button class="anadir-carrito">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemimg">
+                <img src="fotos/item8.jpg">
+            </div>
+            <div class="iteminfo">
+                <h2>Campera de Jean Transparente</h2>
+                <p class="precio">$39000.00</p>
+                <button class="anadir-carrito">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
