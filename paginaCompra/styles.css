@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: white;
+}
+.banner{
+    background-image:url("../fotos/threadbanner.png");
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.textoBanner{
+    text-align: center;
+    position: relative;
+    top: 20%;
+    bottom: 80%;
+    color: black;
+    font-family: Brittany;
+    font-size: 40px;
+}
+@font-face {
+    font-family: "Brittany";
+    src: url("../fonts/BrittanySignature.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "DMsans";
+    src: url("../fonts/DMSans.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+.options {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.fa-info{
+    margin: 0 0 0 6px;
+}
+.menu {
+    width: 10px;
+    height: 10px;
+    margin: 7px;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    background-color: rgba(46, 46, 46, 0.5);
+    z-index: 1;
+    transition-duration: 0s;
+    border-radius: 50px;
+}
+.menu:hover {
+    background-color:rgba(46, 46, 46, 0.5);
+    height: 180px;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(46, 46, 46, 0);
+    padding: 10px;
+    margin-top: 30px;
+    right: 0%;
+    top: 0;
+    z-index: 1;
+    transition-duration: 0.5s;
+    color: white;
+    line-height: 35px;
+}
+.menu:hover .submenu {
+    display: block;
+}
+.submenu a {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 5px 0;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.submenu a:hover {
+    background-color: gray;
+    color: white;
+}
+.fa-ellipsis-vertical{
+    position: absolute;
+    font-size: 25px;
+    margin: -12px 16px 0px 0px;
+    right: 0;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition-duration: 0.5s;
+    z-index: 1;
+}
+.fa-ellipsis-vertical:hover{
+    color: white;
+}
+header{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    right: 0;
+    margin: 15px 75px 0 0;
+    font-size: 25px;
+    stroke: black;
+}
+.fa-cart-shopping:hover{
+    color: white;
+    cursor: pointer;
+}
+.carrito{
+    position: relative;
+    color: black;
+}
+.productos{
+    position: absolute;
+    top: 55%;
+    margin-left: 15px;
+    background-color: black;
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#cantidadProductos{
+    font-size: 13px;
+    font-family: DMsans;
+}
+
+.container-productosdelcarrito{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    width: 500px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.fa-x{
+   font-size: 25px; 
+}
+.fa-x:hover{
+    color: red;
+    cursor: pointer;
+}
+.productosdelcarrito{
+   display: flex;
+   justify-content: space-between; 
+   padding: 20px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+   
+}
+.informaciondelproductodelcarro{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.9;
+    font-family: DMsans;
+    
+    align-items: center;
+}
+.tituloproductocarrito{
+    font-size: 25px;
+    margin: 0 20px;
+}
+.precioproductocarrito{
+    font-weight: 700;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.cantidadproductocarrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+.totalcarrito{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 20px;
+    align-items: center;
+    font-family: DMsans;
+}
+.totalcarrito h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+.totalpagar{
+    font-size: 25px;
+    font-weight: 900;
+}
+.carritoescondido{
+    display: none;
+}
+img{
+    max-width: 100%;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+    margin: 20px;
+}
+.item{
+    border-radius: 10px;
+    border: 1px teal solid;
+}
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.5s;
+}
+.item:hover img{
+    transform: scale(1.1);
+}
+.itemimg{
+    overflow: hidden;
+}
+.iteminfo{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: DMsans;
+}
+.precio{
+    font-size: 18px;
+    font-weight: 900;
+    font-family: arial;
+}
+.iteminfo button{
+    border: none;
+    background: none;
+    background-color: teal;
+    color: white;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+.carro-vacio{
+    padding: 20px;
+    text-align: center;
+    font-family: DMsans;
+}
+.escondido{
+    display: none;
+}
+.buy{
+    text-align: center;
+    font-family: DMsans;
+    font-weight: 900;
+    background-color: rgb(10, 168, 168);
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.botoncompra{
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 35px;
+    position: relative;
+}
+.convertidor{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    margin: 18px 130px 0 0;
+    font-size: 25px;
+}
+.convertidor i{
+    transition-duration: 0.5s;
+    color: black;
+}
+.convertidor i:hover{
+    color:white
+}
+#conversor{
+    font-size: 13px;
+    font-family: DMsans;
+}
+.monedas{
+    position: absolute;
+    top: 55%;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: white;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.pantalladecompra{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 700px;
+}
+.fondo{
+    background-color: beige;
+    width: 700px;
+    height: 620px;
+    border-radius: 25px;
+    padding: 30px 40px;
+}
+.fondo h1{
+    border-bottom: 2px rgba(0, 0, 0, 0.5) solid;
+    padding-bottom: 20px;
+    margin: 0px;
+    font-family: DMsans;
+    text-align: center;
+}
+.fondo .inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 50px 0;
+}
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+}
+.inputbox input::placeholder{
+    color: black
+}
+.inputbox i{
+    position: absolute;
+    right: 20px;
+    top: 115%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.inputbox h2{
+    text-align: center;
+    font-family: DMsans;
+}
+.fondo .fa-xmark{
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    font-size: 30px;
+    color: black;
+}
+.fondo .fa-xmark:hover{
+    color: red;
+    cursor: pointer;
+}
+.esconder{
+    display: none;
+}
+.comprafinalizada{
+    margin-top: 20px;
+    background-color: rgb(32, 185, 185);
+    text-align: center;
+    padding: 20px;
+    font-family: DMsans;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 900;
+}
