@@ -141,3 +141,16 @@ h2{
     font-family: Brittany;
     margin-right: 60px;
 }
+
+
+
+@media screen and (max-width: 500px) {
+    .fondo{
+        background-color: white;
+        width: 300px;
+        height: 500px;
+        border-radius: 25px;
+        padding: 30px 20px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+}
