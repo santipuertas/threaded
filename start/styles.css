@@ -270,3 +270,12 @@ h2{
         font-size: 20px;
     }
 }
+@media screen and (max-width: 300px) {
+    .slider-box{
+        width: 141px;
+        height: 188px;
+        margin: 50px auto 40px;
+        overflow: hidden;
+        box-shadow: 10px 5px 10px teal;
+    }
+}
