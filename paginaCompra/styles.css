@@ -403,7 +403,7 @@ img{
     }
     .items{
         display: grid;
-        grid-template-columns: repeat(2, 5fr);
+        grid-template-columns: repeat(1, 5fr);
         gap: 50px;
         margin: 20px;
     }
@@ -426,7 +426,7 @@ img{
     }
     .item img{
         width: 100%;
-        height: 200px;
+        height: 300px;
         object-fit: cover;
         border-radius: 10px 10px 0 0;
         transition: all 0.5s;
@@ -516,7 +516,7 @@ img{
     }
     .item img{
         width: 100%;
-        height: 200px;
+        height: 300px;
         object-fit: cover;
         border-radius: 10px 10px 0 0;
         transition: all 0.5s;
