@@ -150,3 +150,13 @@ h2{
         box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
     }
 }
+@media screen and (max-width: 300px) {
+    .fondo{
+        background-color: white;
+        width: 250px;
+        height: 500px;
+        border-radius: 25px;
+        padding: 30px 20px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+}
