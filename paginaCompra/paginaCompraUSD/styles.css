@@ -396,7 +396,7 @@ img{
 
 @media screen and (max-width: 500px) {
     .banner{
-        background-image:url("../../fotos/threadbanner.png");
+        background-image:url("../fotos/threadbanner.png");
         height: 250px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -404,7 +404,7 @@ img{
     }
     .items{
         display: grid;
-        grid-template-columns: repeat(2, 5fr);
+        grid-template-columns: repeat(1, 5fr);
         gap: 50px;
         margin: 20px;
     }
@@ -427,7 +427,7 @@ img{
     }
     .item img{
         width: 100%;
-        height: 200px;
+        height: 300px;
         object-fit: cover;
         border-radius: 10px 10px 0 0;
         transition: all 0.5s;
@@ -474,17 +474,10 @@ img{
         font-weight: 400;
         font-size: 15px;
     }
-    .inputbox i{
-        position: absolute;
-        right: 20px;
-        top: 115%;
-        transform: translateY(-55%) translateX(20%);
-        font-size: 20px;
-    }
 }
 @media screen and (max-width: 300px) {
     .banner{
-        background-image:url("../../fotos/threadbanner.png");
+        background-image:url("../fotos/threadbanner.png");
         height: 250px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -524,7 +517,7 @@ img{
     }
     .item img{
         width: 100%;
-        height: 200px;
+        height: 300px;
         object-fit: cover;
         border-radius: 10px 10px 0 0;
         transition: all 0.5s;
@@ -608,12 +601,5 @@ img{
     }
     .fa-x{
         font-size: 10px; 
-     }
-     .inputbox i{
-        position: absolute;
-        right: 20px;
-        top: 115%;
-        transform: translateY(-90%) translateX(20%);
-        font-size: 20px;
     }
 }
